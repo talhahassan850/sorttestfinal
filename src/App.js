@@ -28,8 +28,7 @@ function App(){
       <Switch>
           <Route path="/login" exact component={Login} />
           <Route path="/register" exact component={Register} />
-          
-          
+      
           <Route path="/product/new" component={NewProducts} />
           <Route path="/product/update/:id" component={updateProducts} />
           <Route path="/product/:page?" component={Products} />      

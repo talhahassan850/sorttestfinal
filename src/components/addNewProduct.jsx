@@ -13,7 +13,8 @@ const NewProducts = (props) => {
       <Auth>
         <Grid container spacing={3}>
       <Grid item xs={12}>
-        <h1>Add New Product</h1>
+        <div style={{textAlign:"center", paddingTop:"2rem"}}>
+        <h1 >Add New Product</h1></div>
       </Grid>
       <Grid item xs={3}></Grid>
       <Grid item xs={6}>
