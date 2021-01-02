@@ -18,14 +18,16 @@ const UseStyles = makeStyles((theme) => ({
   display: "flex",
   justifyContent: "center",
   backgroundColor: "DodgerBlue",
- }
+
+ },
  
 }));
 const menu = () => {
   const classes=UseStyles();
     return (
       <div className="d3">
-      <AppBar position="static" style={{backgroundColor:"Azure"}}>
+      <AppBar position="static" style={{backgroundColor:"Azure"}}
+      className="d4">
         <Toolbar>
           <Typography>
             <Link to="#" className={classes.c1}>T-shirts</Link>

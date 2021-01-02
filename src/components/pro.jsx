@@ -3,14 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import SingleProduct from './productFromApi'
 import Pagination from '@material-ui/lab/Pagination';
 import Jumbotron from 'react-bootstrap/Jumbotron'
-//import Bar from './bar';
-//import axios from "axios";
+import "../App.css";
 import AddIcon from "@material-ui/icons/Add";
 import { Fab, Grid } from "@material-ui/core";
 import productService from "./productService";
 import userService from "./userService";
 import Menu from "./menu";
-//import { Pagination } from "react-bootstrap";
 const UseStyles = makeStyles((theme) => ({
     addBtn: {
       position: "absolute",
@@ -50,11 +48,12 @@ const Pro = (props) => {
           <div style={{paddingLeft:"4rem", paddingRight:"4rem"}}>
           <Jumbotron fluid style={{background:"lightgary"}}>
   <h1 style={{paddingLeft:"40%"}}>Seller</h1>
-  
+  <hr/>
     </Jumbotron>
     <Menu />    </div>
 
           <br/>
+          <div style={{paddingLeft:"4rem"}}>
       Records Per Page:{" "} <br/>
       <select
         value={perPage}
@@ -65,7 +64,7 @@ const Pro = (props) => {
         <option value="4">Four</option>
         <option value="6">Six</option>
         <option value="8">Eight</option>
-      </select> 
+      </select> </div>
       {userService.isLoggedIn() && (
         <Fab 
           color="primary"

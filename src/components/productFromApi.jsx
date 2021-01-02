@@ -5,7 +5,6 @@ import productService from "./productService";
 import { withRouter } from "react-router";
 import userService from "./userService";
 import Rating from '@material-ui/lab/Rating';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import "../App.css";
 const SingleProduct = (props) => {
@@ -16,12 +15,12 @@ console.log(props);
     <Grid item xs={4}>
       <br/>
       <h2>
-        <div>
+        <div className="b1">
+
       <img src={product.prImage } className="a8"/>
-      <div>
-      <p style={{fontSize:"1.5rem"}}>{product.prName}</p>
-      
-      <p style={{fontSize:"1.5rem"}}>{product.prPrice}</p>{" "}
+      <div className="b2">
+      <p style={{fontSize:"1.2rem", color:"darkblue"}}>{product.prName}</p>      
+      <p style={{fontSize:"1.2rem", color:"darkblue"}}>{product.prPrice}</p>{" "}
       <Box component="fieldset" mb={3} borderColor="transparent">
         <Rating
           name="simple-controlled"
@@ -33,7 +32,7 @@ console.log(props);
       </Box>
       <Button style={{background:"lightblue"}}>Add to cart</Button>
       </div>
-      </div>
+      
     <br/>
 
       {userService.isAdmin() && (
@@ -70,6 +69,7 @@ console.log(props);
       </Button>
       </>
         )}
+        </div>
     </h2>
     
     <hr />

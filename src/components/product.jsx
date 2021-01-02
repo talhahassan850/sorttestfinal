@@ -2,7 +2,6 @@ import React from "react";
 import "../index.css"
 const pro = (props) => {
     var pri=props.price<1200?"green":"orange";
-   //<h1>{title (inside return)}</h1>
     return ( 
         <div>
             <h1 class="a3">{props.title}</h1>
