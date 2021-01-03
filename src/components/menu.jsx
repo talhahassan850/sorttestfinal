@@ -1,7 +1,8 @@
 import React from "react";
 //import { Link } from "react-router-dom";
 //import Button from '@material-ui/core/Button';
-import "../index.css"
+import "../index.css";
+import "../App.css";
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 import { AppBar, Button, Toolbar, Typography } from "@material-ui/core";
@@ -26,11 +27,12 @@ const menu = () => {
   const classes=UseStyles();
     return (
       <div className="d3">
-      <AppBar position="static" style={{backgroundColor:"Azure"}}
+      <AppBar position="static" style={{backgroundColor:"Azure"}} 
       className="d4">
-        <Toolbar>
+        <Toolbar >
           <Typography>
-            <Link to="#" className={classes.c1}>T-shirts</Link>
+            <Link to="#" className={classes.c1}
+            style={{paddingLeft:"18rem"}}>T-shirts</Link>
           </Typography>
           <Typography >
           <Link to="#" className={classes.c1}>
